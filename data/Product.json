@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "product_name": "Hat",
+      "price": 39
+    },
+    {
+      "product_name": "Scarf",
+      "price": 42
+    },
+    {
+      "product_name": "Hoodie",
+      "price": 45
+    },
+    {
+      "product_name": "tshirt",
+      "price": 46
+    },
+    {
+      "product_name": "Watch",
+      "price": 50
+    },
+    {
+      "product_name": "Trousers",
+      "price": 43
+    }
+  ]
+}
