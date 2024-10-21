@@ -2,27 +2,27 @@
   "products": [
     {
       "product_name": "Hat",
-      "price": 39
+      "price": 36
     },
     {
       "product_name": "Scarf",
-      "price": 42
+      "price": 35
     },
     {
       "product_name": "Hoodie",
-      "price": 45
+      "price": 47
     },
     {
       "product_name": "tshirt",
-      "price": 46
+      "price": 40
     },
     {
       "product_name": "Watch",
-      "price": 50
+      "price": 49
     },
     {
       "product_name": "Trousers",
-      "price": 43
+      "price": 37
     }
   ]
 }

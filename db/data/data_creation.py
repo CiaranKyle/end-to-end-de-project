@@ -32,7 +32,7 @@ def customer_data_creation(num):
     data_to_json = { 'data': data }
     json_obj = json.dumps(data_to_json, indent=2)
 
-    with open("Customer.json", 'w') as f:
+    with open("db/data/customer.json", 'w') as f:
         f.write(json_obj)
 
 def product_data_creation():
@@ -53,7 +53,7 @@ def product_data_creation():
     product_to_json = { 'products': products_data}
     json_products = json.dumps(product_to_json, indent=2)
 
-    with open("Product.json", 'w') as f:
+    with open("db/data/product.json", 'w') as f:
         f.write(json_products)
     
 customer_data_creation(10000)

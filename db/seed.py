@@ -8,7 +8,7 @@ def seed(db, customers, product):
         db.run('''INSERT INTO customers
             (first_name, age, items_brought, satisfaction_rating)
             VALUES 
-            (:first_name, :age, :items_brought, :satisfaction_rating);''',
+            (:first_name, :age, \':items_brought\', :satisfaction_rating);''',
             first_name = row['first_name'], age = row['age'],
             items_brought = row['items_brought'],
             satisfaction_rating = row['satisfaction_rating']
@@ -27,7 +27,7 @@ def create_customers(db):
                   customer_id SERIAL PRIMARY KEY,
                   customer_name VARCHAR(40) NOT NULL,
                   age INT NOT NULL,
-                  items_bought VARCHAR(100) NOT NULL
+                  items_bought VARCHAR(MAX) NOT NULL,
                   satisfaction_rating INT NOT NULL
                   )''')
 
