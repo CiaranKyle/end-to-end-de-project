@@ -13,8 +13,10 @@ db = None
 try:
     db = create_conn()
     seed(db, customers, products)
+    
 except Exception as e:
     print(e)
+
 finally:
     if db:
         close_db(db)
