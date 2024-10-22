@@ -17,7 +17,7 @@ def seed(db, customers, product):
             )
         
     for row in product['products']:
-        db.run('''INSERT INTO products
+        db.run('''INSERT INTO productsc
                (product_name, price)
                VALUES
                (:product_name, :price);''',
