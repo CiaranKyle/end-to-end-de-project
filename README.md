@@ -1,6 +1,3 @@
-NOTE: Run seed file currently not working as I need to update how to INSERT
-into the customer.json file. SQL not enjoying the list being passed in.
-
 
 This project starts off by creating randomly generated data and storing this into a JSON file. This is trying to replicate customer data and the products that
 they buy from a clothing store maybe.
