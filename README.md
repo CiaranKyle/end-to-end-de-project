@@ -8,5 +8,7 @@ which will handle the data normalisation of the tables in the database.
 This will split out into 4 tables. Customer info (I may go back and add 
 more random data to customer.json creation), Order, OrderItem and, Product. These will link together and queries can be made from these tables.  
 
+The random data includes, a data of purchase, the city the customer was in, age, first and last names, items bought, and a satisfaction rating.
+
 The project will be built on skills I have learned from the data engineering bootcamp course at Northcoders. As I'm just over halfway through this it won't be a
 completed and glossy project. I will at some stage host an EC2 and RDS with AWS so that the API requests can be handled through that live.
