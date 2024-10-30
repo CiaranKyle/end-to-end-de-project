@@ -16,5 +16,4 @@ def concat_name(database):
                                 LIMIT 10;""")
     return concat_names
 
-print(concat_name(db))
 
