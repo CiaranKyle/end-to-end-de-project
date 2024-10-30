@@ -2,35 +2,35 @@
   "products": [
     {
       "product_name": "Hat",
-      "price": 44
-    },
-    {
-      "product_name": "Scarf",
-      "price": 35
-    },
-    {
-      "product_name": "Hoodie",
-      "price": 34
-    },
-    {
-      "product_name": "tshirt",
-      "price": 31
-    },
-    {
-      "product_name": "Watch",
-      "price": 31
-    },
-    {
-      "product_name": "Trousers",
-      "price": 45
-    },
-    {
-      "product_name": "Accessory",
       "price": 46
     },
     {
-      "product_name": "Jewellery",
+      "product_name": "Scarf",
+      "price": 31
+    },
+    {
+      "product_name": "Hoodie",
+      "price": 46
+    },
+    {
+      "product_name": "tshirt",
+      "price": 38
+    },
+    {
+      "product_name": "Watch",
+      "price": 32
+    },
+    {
+      "product_name": "Trousers",
+      "price": 35
+    },
+    {
+      "product_name": "Accessory",
       "price": 44
+    },
+    {
+      "product_name": "Jewellery",
+      "price": 43
     }
   ]
 }

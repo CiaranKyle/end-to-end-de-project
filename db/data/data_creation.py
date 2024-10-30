@@ -30,7 +30,7 @@ def customer_data_creation(num):
             'satisfaction_rating': random.choice(random.choices(
             [1, 2, 3, 4, 5], weights=[0.05, 0.15, 0.2, 0.4, 0.2])),
             'city': random.choice(cities), 
-            'data_of_purchase': str(fake.date_between(start_date='-2y', end_date='today'))
+            'date_of_purchase': str(fake.date_between(start_date='-2y', end_date='today'))
         }
 
         data.append(people)
