@@ -1,8 +1,11 @@
-from names import get_first_name
+from names import get_first_name, get_last_name
 import json
 import random
+from faker import Faker
 
-products = ['Hat', 'Scarf', 'Hoodie', 'tshirt', 'Watch', 'Trousers']
+fake = Faker()
+products = ['Hat', 'Scarf', 'Hoodie', 'tshirt', 'Watch', 'Trousers', 'Accessory', 'Jewellery']
+cities = ['Liverpool', 'Manchester', 'London', 'Sheffield', 'Leeds', 'York', 'Birmingham']
 data = []
 
 def customer_data_creation(num):
@@ -21,10 +24,13 @@ def customer_data_creation(num):
 
         people = {
             'first_name': get_first_name(),
-            'age': random.randint(18, 75),
+            'last_name': get_last_name(),
+            'age': random.randint(18, 65),
             'items_bought': random.sample(products, k=random.randint(0, len(products)-1)),
             'satisfaction_rating': random.choice(random.choices(
-            [1, 2, 3, 4, 5], weights=[0.05, 0.15, 0.2, 0.4, 0.2]))
+            [1, 2, 3, 4, 5], weights=[0.05, 0.15, 0.2, 0.4, 0.2])),
+            'city': random.choice(cities), 
+            'data_of_purchase': str(fake.date_between(start_date='-2y', end_date='today'))
         }
 
         data.append(people)
