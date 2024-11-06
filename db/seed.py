@@ -11,12 +11,12 @@ def seed(db, customers, product):
 
     for row in customers['data']:
         db.run('''INSERT INTO customers
-            (first_name, last_name, age, satisfaction_rating,
+            (name, age, satisfaction_rating,
             date_of_purchase, city)
             VALUES 
-            (:first_name, :last_name, :age, :satisfaction_rating,
+            (:name, :age, :satisfaction_rating,
             :date_of_purchase, :city);''',
-            first_name = row['first_name'], last_name = row['last_name'],
+            name = row['first_name'] + ' ' + row['last_name'],
             age = row['age'],
             satisfaction_rating = row['satisfaction_rating'],
             date_of_purchase = row['date_of_purchase'],
@@ -47,8 +47,7 @@ def seed(db, customers, product):
 def create_customers(db):
     return db.run('''CREATE TABLE customers (
                   customer_id SERIAL PRIMARY KEY,
-                  first_name VARCHAR(40) NOT NULL,
-                  last_name VARCHAR(40) NOT NULL,
+                  name VARCHAR(40) NOT NULL,
                   age INT NOT NULL,
                   satisfaction_rating INT NOT NULL,
                   date_of_purchase VARCHAR(32) NOT NULL,

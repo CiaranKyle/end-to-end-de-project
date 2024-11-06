@@ -9,8 +9,9 @@ def select_10_entries(database):
     """This function is a simple query by selecting all columns from a given database.
     The default variables are: db, customers and 10."""
 
-    select_query = database.run("""SELECT * FROM orders LIMIT 10;""")
+    select_query = database.run("""SELECT * FROM customers LIMIT 10;""")
     return select_query
 
     
 print(select_10_entries(db))
+
