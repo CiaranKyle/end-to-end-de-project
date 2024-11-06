@@ -5,15 +5,12 @@ orders placed. Then we can make a column in customers table of how much a
 customer has spent to date. 
 """
 db = create_conn()
-def concat_name(database):
+def select_10_entries(database):
+    """This function is a simple query by selecting all columns from a given database.
+    The default variables are: db, customers and 10."""
+
+    select_query = database.run("""SELECT * FROM orders LIMIT 10;""")
+    return select_query
+
     
-    concat_names = database.run("""ALTER TABLE customers
-                                DROP COLUMN first_name;
-                                ALTER TABLE customers
-                                DROP COLUMN last_name;
-                                SELECT * 
-                                FROM customers 
-                                LIMIT 10;""")
-    return concat_names
-
-
+print(select_10_entries(db))

@@ -26,7 +26,7 @@ def customer_data_creation(num):
             'first_name': get_first_name(),
             'last_name': get_last_name(),
             'age': random.randint(18, 65),
-            'items_bought': random.sample(products, k=random.randint(0, len(products)-1)),
+            'items_bought': random.sample(products, k=random.randint(1, len(products)-1)),
             'satisfaction_rating': random.choice(random.choices(
             [1, 2, 3, 4, 5], weights=[0.05, 0.15, 0.2, 0.4, 0.2])),
             'city': random.choice(cities), 
@@ -62,5 +62,5 @@ def product_data_creation():
     with open("db/data/product.json", 'w') as f:
         f.write(json_products)
     
-customer_data_creation(10000)
+customer_data_creation(1000)
 product_data_creation()
