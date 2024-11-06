@@ -62,5 +62,5 @@ def product_data_creation():
     with open("db/data/product.json", 'w') as f:
         f.write(json_products)
     
-customer_data_creation(1000)
+customer_data_creation(10000)
 product_data_creation()
