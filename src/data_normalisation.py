@@ -15,3 +15,5 @@ def select_10_entries(database):
     
 print(select_10_entries(db))
 
+
+#Use pandas to connect and load data to an OLAP database! 
