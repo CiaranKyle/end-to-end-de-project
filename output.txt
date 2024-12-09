@@ -1,2 +1,0 @@
-You are now connected to database "de_project" as user "ciaran-kyle".
-ALTER TABLE

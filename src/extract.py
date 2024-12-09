@@ -24,7 +24,7 @@ def initial_extraction():
         columns = [col["name"] for col in db.columns]
 
         if rows:
-            with open(f"{table[0]}.csv", 'w') as file:
+            with open(f"db/data/{table[0]}.csv", 'w') as file:
                 writer = csv.writer(file)
                 writer.writerow(columns)
                 writer.writerows(rows)
