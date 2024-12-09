@@ -34,6 +34,3 @@ def initial_extraction():
     close_db(db)
 
     return extracted_tables
-
-initial_extraction()
-    
