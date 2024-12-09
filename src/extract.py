@@ -29,7 +29,7 @@ def initial_extraction():
                 writer = csv.writer(file)
                 writer.writerow(columns)
                 writer.writerows(rows)
-            extracted_tables.append(table[0])
+            extracted_tables.append(file_name)
 
     close_db(db)
 
