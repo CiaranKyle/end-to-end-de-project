@@ -14,7 +14,5 @@ def create_conn():
     conn = Connection(user, database=database, password=password)
     return conn
 
-# Create a close_db function that closes a passed database connection object #
-
 def close_db(conn):
     conn.close()
