@@ -7,8 +7,9 @@ customer has spent to date.
 """
 
 def initial_extraction():
-    """This function is a simple query by selecting all columns from a given database.
-    The default variables are: db, customers and 10."""
+    """This function takes all the tables from the database puts the tables into
+    csv files. By connecting to the database and selecting all tables from the schema
+    then selecting all the columns from these tables separately."""
 
 
     db = create_conn()
@@ -19,12 +20,12 @@ def initial_extraction():
     """Query each table to extract all information it contains"""
     for table in select_query:
 
-        file_name = f'{[table[0]]}'
+        file_name = f'db/data/{table[0]}.csv'
         rows = db.run(f"SELECT * FROM {table[0]}")
         columns = [col["name"] for col in db.columns]
 
         if rows:
-            with open(f"db/data/{table[0]}.csv", 'w') as file:
+            with open(file_name, 'w') as file:
                 writer = csv.writer(file)
                 writer.writerow(columns)
                 writer.writerows(rows)
