@@ -1,10 +1,10 @@
 import pandas as pd
 
 def customers(df):
-    pass
+    return df.head()
 
 def orders(df):
-    pass
+    return df.head()
 
 def products(df):
-    pass
+    return df.head()

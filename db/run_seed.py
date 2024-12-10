@@ -1,4 +1,5 @@
 from db.seed import seed
+from db.seed_analytics import seed_analytics
 from db.connection import create_conn, close_db
 import json
 #need to import or read json files before they are passed to the seed.

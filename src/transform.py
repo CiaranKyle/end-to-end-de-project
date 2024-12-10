@@ -11,12 +11,19 @@ def transform():
     """
 
     function_dictionary = {
-        'db/data/products.csv' : products(df),
-        'db/data/orders.csv' : orders(df),
-        'db/data/customers.csv' : customers(df)
+        'db/data/products.csv' : products,
+        'db/data/orders.csv' : orders,
+        'db/data/customers.csv' : customers
     }
 
     files = initial_extraction()
 
     for file in files:
         df = pd.read_csv(file)
+        updated_df = function_dictionary[file](df)
+        print(updated_df)
+
+    return []
+
+transform()
+        
