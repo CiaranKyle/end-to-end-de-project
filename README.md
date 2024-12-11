@@ -23,7 +23,7 @@ There is then an extract.py file which extracts all the data out of the initial 
 
 From here, I've written a transform.py file which transforms the csv files into the star schema for the OLAP database, shown below. The csvs are passed into dataframes where pandas manipulates them and does the relevant transformations.
 
-![Database OLTP](./Untitled(1).png)
+![Database OLTP](./Untitled_OLAP.png)
 
 ### Load
 
